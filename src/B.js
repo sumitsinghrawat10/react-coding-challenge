@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
-import { Data } from './App'
+import React from 'react'
+
 const B = () => {
-    const FirstName= useContext(Data)
+
   return (
     <div>
-        {FirstName}
+   <h1>djsj</h1>
     </div>
   )
 }
