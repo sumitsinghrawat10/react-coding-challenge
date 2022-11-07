@@ -6,6 +6,8 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import A from './A';
 import B from './B';
+import C from './C';
+import D from './D';
 export default function App() {
   const [expanded, setExpanded] = React.useState(false);
 
@@ -57,15 +59,12 @@ export default function App() {
           id="panel3bh-header"
         >
           <Typography  variant="h6">
-            Advanced settings
+           3. Add value through input element and after that there will be <strong>delete</strong> option too.
           </Typography>
           
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
-            amet egestas eros, vitae egestas augue. Duis vel est augue.
-          </Typography>
+        <C/>
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
@@ -74,13 +73,10 @@ export default function App() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>Personal data</Typography>
+          <Typography variant="h6">4.  Write a functional component that allows a user to blur image with slider</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography  variant="h6">
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
-            amet egestas eros, vitae egestas augue. Duis vel est augue.
-          </Typography>
+         <D/>
         </AccordionDetails>
       </Accordion>
     </div>
